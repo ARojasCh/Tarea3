@@ -1,0 +1,51 @@
+.estructuraGrid{
+    display: grid;
+    grid-template-columns:  150px 800px 150px;
+    grid-template-rows: 80px 800px 80px;
+    height: 80vh;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "sidebarLeft main sidebarRight" 
+    "footer footer footer"
+    ;
+}
+
+.navbar{
+    background-color: #9ba0d2;
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarLeft{
+    background-color: #f0f5b4;
+    grid-area: sidebarLeft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: #fa8787;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarRight{
+    background-color: #f0f5b4;
+    grid-area: sidebarRight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #a5cdcd;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

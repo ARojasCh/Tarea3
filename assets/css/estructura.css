@@ -1,0 +1,58 @@
+.estructura {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 8px;
+}
+
+.cuadro {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width >=576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .cuadro {
+    width: 150px;
+    height: 150px;
+    }
+
+    .estructura {
+    grid-template-columns: 150px 150px 150px;
+    }
+}
+
+@media (width >=768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (width >=992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (width >=1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (width >=1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero {
+        height: 800px;
+    }
+}

@@ -1,0 +1,91 @@
+.datos {
+    display: block;
+}
+
+/* Botones */
+
+.boton button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    width: 115px;
+    height: 45px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.boton button:hover {
+    background-color: #0056b3;
+    
+}
+
+.boton button:active {
+    transform: scale(0.9);
+}
+
+.boton2 button {
+    background-color: #eb5454;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    width: 115px;
+    height: 45px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.boton2 button:hover {
+    background-color: #ff0000;
+    
+}
+.boton2 button:hover::after {
+    content: " pls, dont!"; 
+}
+
+.boton2 button:active {
+    transform: scale(10);
+    width: 300px;
+    height: 200px;
+}
+
+/* media responsive */
+
+@media (width >=576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (width >=768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (width >=992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .datos {
+        display: flex;
+        justify-content: space-around
+    }
+}
+
+@media (width >=1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (width >=1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero {
+        height: 800px;
+    }
+}

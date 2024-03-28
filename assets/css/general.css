@@ -1,0 +1,31 @@
+
+body {
+    background-color: white;
+    font-family: system-ui;
+}
+
+nav {
+    display: flex;
+    padding: 16px 24px 16px 24px;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.menu a {
+    text-decoration-line: none;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s;
+}
+
+.menu a:hover{
+    color: chocolate;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
